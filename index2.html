@@ -1,0 +1,495 @@
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview + Download Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+
+<body>
+
+<div class="last_section">
+    <a class="go_back" href = "javascript:history.back()">Go Back</a>
+    <button id="downlooad" onclick="dontdownload()">Download Pdf</button><!--onclick="dontdownload()"-->
+</div>
+
+<form id="second_first_div">
+    <div class="seriously_-1">
+        <div class="seriously">
+        
+            <div class="first_section">
+                <div class="image_only"><div id="image_storer"></div></div>
+                <div class="name_-1"><div id="name"><!-- inputed text --></div></div>
+                
+            </div>
+            
+            <div class="second_and_third_container">
+                <div class="second_section_and_projects">
+                    <div class="second_section">
+                        <div class="contact print_div">Contact:</div>
+                        <hr>
+                        <div class="contact_section">
+                            <i class="fa-solid fa-location-dot icon"></i>
+                            <div class="inside_contact_section">
+                                <a><div id="address_1"><!-- inputed text --></div></a>        
+                                <div id="address_2"><!-- inputed text --></div>
+                            </div>
+                        </div>
+                    
+                        <div class="contact_section">
+                            <i class="fa-solid fa-phone icon"></i>
+                            <div class="inside_contact_section">
+                                <div id="phone_no"><!-- inputed text --></div>
+                            </div>            
+                        </div>
+                    
+                        <div class="contact_section">
+                            <i class="fa-solid fa-envelope icon"></i>
+                            <div class="inside_contact_section">
+                                <div id="Email_ID"><!-- inputed text --></div>
+                            </div>
+                        </div>
+                    
+                        <div class="contact_section">
+                            <i class="fa-brands fa-linkedin icon"></i>
+                            <div class="inside_contact_section">
+                                <div id="Linkedin_ID"><!-- inputed text --></div>
+                                <div id="Linkedin_ID_link"></div>
+                            </div>
+                        </div>
+                    
+                        <div class="contact_section">
+                            <i class="fa-brands fa-square-instagram icon"></i>
+                            <div class="inside_contact_section">
+                                <div id="instagram_ID"><!-- inputed text --></div>
+                                <div id="instagram_ID_link"></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="projects">
+                        <div class="projects_title print_div">Projects:</div>
+                        <hr class="proj_hr">
+                        <div class="proj_div"><ul><li><div id="Project_1"><!-- inputed text --></div></li></ul></div>
+                        <div class="proj_div"><ul><li><div id="Project_2"><!-- inputed text --></div></li></ul></div>
+                        
+                        <div id="additional_projectss">
+        
+                    
+                    
+                         </div>
+    
+                    </div>
+                </div>
+                
+                
+            
+                <div><hr class="vertical_line"></div>
+                
+                <div class="third_title">
+                    <div class="Education">
+
+                        <div class="heading">
+                            Educational Details:
+                            <hr>
+                        </div>
+                
+                        <div class="some_div">
+    
+                            <div class="third_container class_10_container">
+    
+                                <div class="third_container_inside_thing">
+                                    <div class="yo">Class 10th:</div>
+                                </div>
+                            
+                                <div class="third_container_inside_thing orange">
+                                    <div class="second_of_third"id="ten_School_Name"><!-- inputed text --></div>
+                                    <div class="second_of_third"id="five"><!-- inputed text --></div>
+                                    <div class="second_of_third"id="ten_Pass_Out_Year"><!-- inputed text --></div>
+                                </div>
+                            
+                            </div>
+                            
+                            <div class="third_container">
+                            
+                                <div class="third_container_inside_thing">
+                                    <div class="yo yo12">Class 12th:</div>
+                                </div>
+                                
+                                <div class="third_container_inside_thing orange">
+                                    <div class="second_of_third"id="twel_School_Name"><!-- inputed text --></div>
+                                    <div class="second_of_third"id="Class_12_Precentage"><!-- inputed text --></div>
+                                    <div class="second_of_third"id="twel_Pass_Out_Year"><!-- inputed text --></div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Achievements">
+                        <div class="heading_1">
+                            Achievements:
+                            <hr>
+                        </div>
+                        <div class="achiev_div"><ul type="square"><li><div id="Achievement_1"><!-- inputed text --></div></li></ul></div>
+                        <div class="achiev_div"><ul type="square"><li><div id="Achievement_2"><!-- inputed text --></div></li></ul></div>
+                        
+                        <div id="additional_achievementss">
+                        
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+                    
+            
+            </div>
+        
+        
+
+            
+
+        </div>
+    </div>
+
+
+
+</form>
+</body>
+<script src="script.js"></script>
+
+<script type="text/javascript">
+
+
+         
+    const name2ndinput = localStorage.getItem("name-input");
+    const address_1_2nd_input = localStorage.getItem("address_1_input");
+    const address_2_2nd_input = localStorage.getItem("address_2_input");
+
+    const phoneno_input = localStorage.getItem("phoneno_input");
+    const emailid_input = localStorage.getItem("emailid_input");
+    const linkedinid_input = localStorage.getItem("linkedinid_input");
+    const instargramid_input = localStorage.getItem("instagramid_input");
+
+    const four = localStorage.getItem("three");
+    const class10_2nd_schoolname_input = localStorage.getItem("class10schoolname_input");
+    const class10_2nd_passoutyear_input = localStorage.getItem("class10passoutyear_input");
+    const class12_2nd_percentage_input = localStorage.getItem("class12percentage_input");
+    const class12_2nd_schoolname_input = localStorage.getItem("class12schoolname_input");
+    const class12_2nd_passoutyear_input = localStorage.getItem("class12passoutyear_input");
+
+    const achievement1_input = localStorage.getItem("achievement1_input");
+    const achievement2_input = localStorage.getItem("achievement2_input");
+
+    const project1_input = localStorage.getItem("project1_input");
+    const project2_input = localStorage.getItem("project2_input");
+
+
+
+    document.getElementById("name").textContent = name2ndinput;
+    document.getElementById("address_1").textContent =address_1_2nd_input;
+    document.getElementById("address_2").textContent =address_2_2nd_input;
+
+    document.getElementById("phone_no").textContent =phoneno_input;
+    document.getElementById("Email_ID").textContent =emailid_input;
+    // document.getElementById("Linkedin_ID").textContent =linkedinid_input;
+    // document.getElementById("instagram_ID").textContent =instargramid_input;
+
+    document.getElementById("five").textContent =four;
+    document.getElementById("ten_School_Name").textContent =class10_2nd_schoolname_input;
+    document.getElementById("ten_Pass_Out_Year").textContent =class10_2nd_passoutyear_input;
+    document.getElementById("Class_12_Precentage").textContent =class12_2nd_percentage_input;
+    document.getElementById("twel_School_Name").textContent =class12_2nd_schoolname_input;
+    document.getElementById("twel_Pass_Out_Year").textContent =class12_2nd_passoutyear_input;
+
+    document.getElementById("Achievement_1").textContent =achievement1_input;
+    document.getElementById("Achievement_2").textContent =achievement2_input;
+
+    document.getElementById("Project_1").textContent =project1_input;
+    document.getElementById("Project_2").textContent =project2_input;
+
+
+
+
+    // image displayer
+    const url = localStorage.getItem("profile-image");
+    const form = document.getElementById("image_storer");
+
+    const img = new Image();
+    img.src = url;
+    form.appendChild(img);
+
+
+
+
+    // window.onload = function(){
+    //     document.getElementById("downlooad")
+    //     .addEventlistener("click",()=>{
+
+    //         const second_first_div = this.document.getElementById("second_first_div");
+    //         console.log(second_first_div);
+
+    //     })
+    // }
+
+
+    // function dontdownload(){
+    //     console.log("orangutan is gay");
+    //     html2canvas(document.getElementById("second_first_div")).then((canvas)=>{
+    //         let base64image = canvas.toDataURL('image/png');
+    //         console.log("dikh gayi aukat");
+
+    //         let pdf = new jsPDF('p', 'px', [4600, 1131]);
+    //         pdf.addImage(base64image, 'png', 20, 20, 5110, 3081);
+    //         pdf.save('fuck_you.pdf');
+
+    //     });
+
+    // }
+
+
+    // jQuery(document).ready(function(){
+
+    //     // $("#donwlooad").click(function(){
+    //     //     console.log("aple is ornage")
+
+    //     //     let wspframe = document.getElementById("second_first_div").contentWindow;
+    //     //     wspframe.focus();
+    //     //     wspframe.print();
+
+
+    //     // });
+
+    //     $("#donwlooad").click(function(){
+                    
+    //         html2canvas(document.querySelector('#second_first_div')).then((canvas) =>{
+    //         let base64image = canvas.toDataURL('image/png');
+    //         console.log(base64image);
+    //         });
+    //     });
+    //   });
+   
+
+
+    // function dontdownload(){
+    //     window.print();
+    // }
+
+
+
+    // function dontdownload(){
+    //     console.log("if you are there or not")
+    //     const anything = document.getElementById("second_first_div");
+    //     // anything.focus();
+    //     anything.print();
+
+    // }
+
+
+
+
+
+    // jQuery(document).ready(function($)
+    // {
+
+    //     $(document).on('click' ,"#download",function(event)
+    //     {
+    //         event.preventDefault();
+
+    //         var element = document.getElementById("second_first_div");
+
+    //         html2pdf().from(element).save();
+    //     }
+    //     )
+    // })
+
+    // $(document).ready(function(){
+    //     $("#download").click(function(){
+
+    //         $(this).hide();
+    //     });
+    // });
+
+    // function builder_2(){
+        
+    // }
+    console.log("kyun be ata nahi");
+
+
+
+
+
+    // additional section js
+
+
+    let g = 3;
+                                                                                                                            let ig = 3;
+
+    let array_three=[];                                                                                                                        
+                                                                                                                            let array_four=[];
+
+
+
+
+
+    const linkedin_container = document.getElementById("Linkedin_ID");
+    let storer_linkedin;
+    let statement_linkedin="";
+
+        statement_linkedin=`<a href="${linkedinid_input}" target="_blank" rel="noopener noreferrer">Linkedin</a>`;
+        linkedin_container.innerHTML = statement_linkedin;
+
+
+    const instagramid_container = document.getElementById("instagram_ID");
+    let storer_instagram;
+    let statement_instagram="";
+
+        statement_instagram=`<a href="${instargramid_input}" target="_blank" rel="noopener noreferrer">Instagram</a>`;
+        instagramid_container.innerHTML = statement_instagram;
+
+
+
+
+
+
+
+    const additional_divi = document.getElementById("additional_projectss");
+                                                                                                                            const additional_divi_achiev = document.getElementById("additional_achievementss");
+
+    // Display_additional_info()
+
+    console.log("1st ae beta sambhal ke");
+
+    // console.log(non_sence);
+
+
+
+    while(localStorage.getItem(`dynmaic_${g}_project`) !=null){
+
+        array_three.push({"additional_data" : localStorage.getItem(`dynmaic_${g}_project`)});
+        console.log(array_three);
+        g++;
+
+
+    }
+
+                                                                                                                            while(localStorage.getItem(`dynmaic_${ig}_achievement`) !=null){
+                                                                                                                            
+                                                                                                                                array_four.push({"additional_2nd_data" : localStorage.getItem(`dynmaic_${ig}_achievement`)});
+                                                                                                                                console.log(array_four);
+                                                                                                                                ig++;
+                                                                                                                            
+                                                                                                                            
+                                                                                                                            }
+
+    console.log("yes sir g=" + g);
+    let h=0;
+    let ih=0;
+
+    // while(array_three[h]!=null){
+
+    //     console.log("the new araya" + array_three);
+    //     h++;
+    // }
+    // console.log("h=", h);
+
+
+    while( array_three[h] !=null)
+    {
+
+        console.log("no sir h=" + h);
+        let statement="";
+        array_three.forEach((orange,i) => {
+
+            console.log("is array working");
+
+
+            statement +=`<div class="proj_div"><ul><li><div id="Project_${i+3}">${orange.additional_data}</div></li></ul></div>`
+        });
+         
+        additional_divi.innerHTML = statement;
+        h++;
+        console.log("h=" + h);
+    }
+    console.log("yes with no sir g=" + g);
+
+
+                                                                                                                                    while( array_four[ih] !=null)
+                                                                                                                                    {
+                                                                                                                                    
+                                                                                                                                        console.log("no sir h=" + ih);
+                                                                                                                                        let statement="";
+                                                                                                                                        array_four.forEach((orange,i) => {
+                                                                                                                                    
+                                                                                                                                            console.log("is array working");
+                                                                                                                                    
+                                                                                                                                    
+                                                                                                                                            statement +=`<div class="achiev_div"><ul type="square"><li><div id="Achievement_${i+3}">${orange.additional_2nd_data}</div></li></ul></div>`
+                                                                                                                                        });
+                                                                                                                                         
+                                                                                                                                        additional_divi_achiev.innerHTML = statement;
+                                                                                                                                        ih++;
+                                                                                                                                        console.log("h=" + ih);
+                                                                                                                                    }
+                                                                                                                                    console.log("yes with no sir g=" + g);
+
+
+
+    // download button functionality
+
+
+    // function dontdownload(){
+
+    //     // const second_first_div = this.document.getElementById("second_first_div");
+    //     // console.log(second_first_div);
+    //     // console.log(window);
+    //     // console.log("menin pagahu");
+    //     // var opt = {
+    //     //     filename: 'My_Resume.pdf',
+    //     //     html2canvas: { scale: 1, scrollY:0}
+    //     // }
+
+    //     //     html2pdf().set(opt).from(second_first_div).save();
+
+
+    //     };
+
+
+    // const html_data_to_download = document.getElementById("project2_input");
+
+    // const topdf = function(html_data_to_download){
+
+
+    //     setTimeout(()=>{
+    //         window.print(html_data_to_download);
+    //     }, 2000)
+        
+    // }
+
+    // downlooad.onclick = ()=>{
+    //     topdf(html_data_to_download);
+    // }
+
+        document.getElementById("Linkedin_ID_link").textContent =linkedinid_input;
+        document.getElementById("instagram_ID_link").textContent =instargramid_input;
+
+function dontdownload(){
+
+    window.print();
+}
+
+    
+
+        
+
+
+</script>
+
+</html>

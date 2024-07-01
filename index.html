@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Maker</title>
+    <link rel ="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+
+    <section>
+        <div id="first_div">
+            <h3 class="h3"><u>Resume Builder</u></h3>                                       
+        </div>
+        <div class="between_first_and_second_div">Fill out these details and you will have your resume generated in seconds!!!!</div>
+        <form id="second_div">
+            <div id="first_two_sections">
+
+                <div class="labels"><div class="title">Personal Details</div>
+                
+                    <div class="label_plus_form">
+                        <span class="label_name">Name:</span>
+                        <input id="name_input" type="text" placeholder ="Yami Sukehiro" required>
+                    </div>
+
+                    <div class="label_plus_form">
+                        <span class="label_name">Add Profile Photo:</span>
+                        <input id="file-el" type="file" required>
+                    </div>
+                
+                    <div class="label_plus_form exxtra">
+                        <span class="label_name">Address Line 1:</span>
+                        <input  id="address_1_input" type="text" placeholder ="Clover Kingdom" class= "address1_form" required>
+                    </div>
+                
+                    <div class="label_plus_form last_formed_form">
+                        <span class="label_name">Address Line 2:</span>
+                        <input id="address_2_input" type="text" placeholder ="Black Bull's Base" required>
+                    </div>
+                
+                </div>
+                
+                <div class="labels"><div class="title">Contact Information</div>
+                
+                    <div class="label_plus_form">
+                        <span class="label_name">Phone no:</span>
+                        <input id="phone_no_input" type="tel" placeholder ="99993333" required>
+                    </div>
+                      
+                    <div class="label_plus_form">
+                        <span class="label_name">Email ID:</span>
+                        <input id="email_id_input" type="email" placeholder ="JuliusNovachrono@gmail.com" required>
+                    </div>
+                
+                    <div class="label_plus_form">
+                        <span class="label_name">Linkedin ID:</span>
+                        <input id="linkedin_id_input" type="url" placeholder ="https://www.linkedin.com/" required>
+                    </div>
+
+                    <div class="label_plus_form last_formed_form">
+                        <span class="label_name">Instagram ID:</span>
+                        <input id="instagram_id_input" type="url" placeholder ="https://www.instagram.com/" required>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="labels"><div class="title">Educational Details</div>
+                
+                <div class="label_plus_form">
+                    <span class="label_name">Class 10th Schooling Location:</span>
+                    <input id="class_10_percentage_input" type="text" placeholder ="Hage Village" required>
+                </div>
+
+                <div class="label_plus_form">
+                    <span class="label_name">School Name:</span>
+                    <input id="class_10_school_name_input" type="text" placeholder ="Black Bull" required>
+                </div>
+
+                <div class="label_plus_form tenth_Pass_out_Year">
+                    <span class="label_name">Pass out Year:</span>
+                    <input id="class_10_pass_out_year_input" type="text" placeholder ="2991" required>
+                </div>
+
+
+
+                <div class="label_plus_form twelfth">
+                    <span class="label_name">Class 12th Schooling Location:</span>
+                    <input id="class_12_percentage_input" type="text" placeholder ="Spade kingdom" required>
+                </div>
+
+                <div class="label_plus_form">
+                    <span class="label_name">School Name:</span>
+                    <input id="class_12_school_name_input" type="text" placeholder ="Golden Dawn" required>
+                </div>
+
+                <div class="label_plus_form last_formed_form">
+                    <span class="label_name ">Pass out Year:</span>
+                    <input id="class_12_pass_out_year_input" type="text" placeholder ="2993" required>
+                </div>
+
+            </div>
+            <div>
+
+                <div class="labels"><div class="title">Achievements</div>
+                
+                    <div class="label_plus_form">
+                        <span class="label_name">Achievement 1:</span>
+                        <input id="achievement_1_input" type="text" placeholder ="Achievement 1" required>
+                    </div>
+                
+                    <div class="label_plus_form">
+                        <span class="label_name">Achievement 2:</span>
+                        <input id="achievement_2_input" type="text" placeholder ="Achievement 2" required>
+                    </div>
+                    <!-- additional achievements div -->
+                    <div id="additional_achievement_label_plus_form">
+
+                    </div>
+                    <div><button class="add_buttons" id ="additional_achievement_btn"type ="button">Add Achievements +</div>
+                
+                </div>
+                
+                <div id="projects"class="labels"><div class="title">Projects</div>
+                
+                    <div class="label_plus_form">
+                        <span class="label_name">Project 1:</span>
+                        <input id="project_1_input" type="text" placeholder ="Project 1" required>
+                    </div>
+                
+                    <div class="label_plus_form">
+                        <span class="label_name">Project 2:</span>
+                        <input id="project_2_input" type="text" placeholder ="Project 2" required>
+                    </div>
+                    <!-- additional projectss div -->
+                    <div id="additional_project_label_plus_form">
+
+                    </div>
+                    <div><button class="add_buttons" id ="additional_project_btn"type ="button">Add Projects +</div>
+
+                    
+                
+                </div>
+            </div>
+
+
+            <div class="sumbit_buttoon"><button id="submit" type ="submit">Go to your Resume</button></div>
+        </form>
+    </section>
+
+</body>
+<script src="script.js"></script>
+</html>
